@@ -1,0 +1,12 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{multirow}
+\begin{table}[]
+\begin{tabular}{@{}|c|c|c|c|c|@{}}
+\toprule
+\textbf{GLoVe}            & \textbf{Hidden Size} & \textbf{LR}            & \textbf{Peak Test Accuracy} & \textbf{Final Acc.} \\ \midrule
+\multirow{2}{*}{42B.300d} & 50                   & \multirow{2}{*}{0.001} & 0.8289 (170 epochs)         & 0.8188              \\ \cmidrule(lr){2-2} \cmidrule(l){4-5} 
+                          & 100                  &                        & 0.8363 (180 epochs)         & 0.8167              \\ \bottomrule
+\end{tabular}
+\label{tab:round2}
+\end{table}
