@@ -1,0 +1,29 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{multirow}
+\begin{table}
+\begin{tabular}{@{}|c|c|cccc@{}}
+\toprule
+\textbf{GLoVE}            & \textbf{Hidden Size} & \textbf{LR}                 & \textbf{Duration (s)}     & \textbf{Peak Test Accuracy}                      & \textbf{Final Acc.}                  \\ \midrule
+\multirow{9}{*}{6B.50d}   & \multirow{3}{*}{25}  & \multicolumn{1}{c|}{0.0005} & \multicolumn{1}{c|}{1388} & \multicolumn{1}{c|}{0.7597 (90 epochs)}          & \multicolumn{1}{c|}{0.7586}          \\ \cmidrule(l){3-6} 
+                          &                      & \multicolumn{1}{c|}{0.001}  & \multicolumn{1}{c|}{1415} & \multicolumn{1}{c|}{0.7854 (100 epochs)}         & \multicolumn{1}{c|}{0.7854}          \\ \cmidrule(l){3-6} 
+                          &                      & \multicolumn{1}{c|}{0.005}  & \multicolumn{1}{c|}{1384} & \multicolumn{1}{c|}{0.7972 (100 epochs)}         & \multicolumn{1}{c|}{0.7972}          \\ \cmidrule(l){2-6} 
+                          & \multirow{3}{*}{50}  & \multicolumn{1}{c|}{0.0005} & \multicolumn{1}{c|}{1404} & \multicolumn{1}{c|}{0.7593 (90 epochs)}          & \multicolumn{1}{c|}{0.6640}          \\ \cmidrule(l){3-6} 
+                          &                      & \multicolumn{1}{c|}{0.001}  & \multicolumn{1}{c|}{1433} & \multicolumn{1}{c|}{0.7809 (100 epochs)}         & \multicolumn{1}{c|}{0.7809}          \\ \cmidrule(l){3-6} 
+                          &                      & \multicolumn{1}{c|}{0.005}  & \multicolumn{1}{c|}{1442} & \multicolumn{1}{c|}{0.7956 (100 epochs)}         & \multicolumn{1}{c|}{0.7956}          \\ \cmidrule(l){2-6} 
+                          & \multirow{3}{*}{100} & \multicolumn{1}{c|}{0.0005} & \multicolumn{1}{c|}{1220} & \multicolumn{1}{c|}{0.7631 (100 epochs)}         & \multicolumn{1}{c|}{0.7631}          \\ \cmidrule(l){3-6} 
+                          &                      & \multicolumn{1}{c|}{0.001}  & \multicolumn{1}{c|}{1185} & \multicolumn{1}{c|}{0.7897 (100 epochs)}         & \multicolumn{1}{c|}{0.7897}          \\ \cmidrule(l){3-6} 
+                          &                      & \multicolumn{1}{c|}{0.005}  & \multicolumn{1}{c|}{1182} & \multicolumn{1}{c|}{0.7947 (90 epochs)}          & \multicolumn{1}{c|}{0.7947}          \\ \midrule
+\multirow{9}{*}{42B.300d} & \multirow{3}{*}{25}  & \multicolumn{1}{c|}{0.0005} & \multicolumn{1}{c|}{4710} & \multicolumn{1}{c|}{0.7966 (90 epochs)}          & \multicolumn{1}{c|}{0.7813}          \\ \cmidrule(l){3-6} 
+                          &                      & \multicolumn{1}{c|}{0.001}  & \multicolumn{1}{c|}{5191} & \multicolumn{1}{c|}{0.8036 (80 epochs)}          & \multicolumn{1}{c|}{0.7766}          \\ \cmidrule(l){3-6} 
+                          &                      & \multicolumn{1}{c|}{0.005}  & \multicolumn{1}{c|}{5320} & \multicolumn{1}{c|}{0.8075 (60 epochs)}          & \multicolumn{1}{c|}{0.7840}          \\ \cmidrule(l){2-6} 
+                          & \multirow{3}{*}{50}  & \multicolumn{1}{c|}{0.0005} & \multicolumn{1}{c|}{5439} & \multicolumn{1}{c|}{0.7990 (100 epochs)}         & \multicolumn{1}{c|}{0.7990}          \\ \cmidrule(l){3-6} 
+                          &                      & \multicolumn{1}{c|}{0.001}  & \multicolumn{1}{c|}{5332} & \multicolumn{1}{c|}{\textbf{0.8194 (90 epochs)}} & \multicolumn{1}{c|}{0.7929}          \\ \cmidrule(l){3-6} 
+                          &                      & \multicolumn{1}{c|}{0.005}  & \multicolumn{1}{c|}{4784} & \multicolumn{1}{c|}{0.7967 (60 epochs)}          & \multicolumn{1}{c|}{0.7810}          \\ \cmidrule(l){2-6} 
+                          & \multirow{3}{*}{100} & \multicolumn{1}{c|}{0.0005} & \multicolumn{1}{c|}{4780} & \multicolumn{1}{c|}{0.7959 (90 epochs)}          & \multicolumn{1}{c|}{0.7876}          \\ \cmidrule(l){3-6} 
+                          &                      & \multicolumn{1}{c|}{0.001}  & \multicolumn{1}{c|}{4740} & \multicolumn{1}{c|}{0.8083 (90 epochs)}          & \multicolumn{1}{c|}{\textbf{0.8067}} \\ \cmidrule(l){3-6} 
+                          &                      & \multicolumn{1}{c|}{0.005}  & \multicolumn{1}{c|}{4701} & \multicolumn{1}{c|}{0.8129 (70 epochs)}          & \multicolumn{1}{c|}{0.7949}          \\ \bottomrule
+\end{tabular}
+\caption{First round of experimental results.}
+\label{tab:results}
+\end{table}
